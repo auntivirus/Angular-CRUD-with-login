@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign Up</h1>
+          <h6>Create your new account here!</h6>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" formControlName="fullName">
+              <span *ngIf="signupForm.controls['fullName'].dirty && signupForm.hasError('required', 'fullName')" class="text-danger">*Please enter a valid name.</span>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" formControlName="mobile">
+              <span *ngIf="signupForm.controls['mobile'].dirty && signupForm.hasError('required', 'mobile')" class="text-danger">*Please enter a correct mobile number.</span>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+              <span *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required', 'email')" class="text-danger">*Please enter a valid email address.</span>
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+              <span *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required', 'password')" class="text-danger">*Please enter a password.</span>
+            </div>
+            <div id="emailHelp" class="text-end"><p style="font-size: 12px;">*We'll never share your details with anyone else.*</p></div>
+            <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary" style="margin-left: 80%; margin-top: 5%">Sign Up</button>
+          </form>
+        <div class="container text-white" id="signin">
+          Already have an account?<span class="mx-2"><a routerLink="/login" class="text-info" style="text-decoration: none;">Sign In</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "id": 7,
+      "firstName": "Allen",
+      "lastName": "Xavier",
+      "email": "allen@xavier.com",
+      "mobile": "7028565270",
+      "salary": "45000"
+    },
+    {
+      "id": 8,
+      "firstName": "Lokesh",
+      "lastName": "Genekal",
+      "email": "lokesh@genekal.com",
+      "mobile": "23045976",
+      "salary": "37000"
+    },
+    {
+      "id": 9,
+      "firstName": "Arnav",
+      "lastName": "Agarwal",
+      "email": "arnav@argarwal.com",
+      "mobile": "356745745",
+      "salary": "34000"
+    },
+    {
+      "id": 10,
+      "firstName": "Smit",
+      "lastName": "Joshi",
+      "email": "smit@joshi.com",
+      "mobile": "8369458960",
+      "salary": "5606560"
+    },
+    {
+      "id": 11,
+      "firstName": "Ashish",
+      "lastName": "Kumar",
+      "email": "ashish@kumar.com",
+      "mobile": "9999999999",
+      "salary": "47000"
+    },
+    {
+      "id": 12,
+      "firstName": "Anmol",
+      "lastName": "Singh",
+      "email": "anmol@singh.com",
+      "mobile": "9345175893",
+      "salary": "30000"
+    }
+  ],
+  "singupUsers": [
+    {
+      "fullName": "ABCD",
+      "email": "abcd@efgh.com",
+      "password": "abcdefghijklmnopqrstuvwxyz",
+      "mobile": "1122334455",
+      "id": 1
+    },
+    {
+      "fullName": "Smit Joshi",
+      "email": "smitgirishjoshi@gmail.com",
+      "password": "smitjoshi",
+      "mobile": "9833516164",
+      "id": 2
+    },
+    {
+      "fullName": "Gaurav Dashpute",
+      "email": "gaurav@dashpute.com",
+      "password": "gauravdashpute",
+      "mobile": "7571204594",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
